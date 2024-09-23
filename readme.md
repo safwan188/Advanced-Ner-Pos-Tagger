@@ -1,5 +1,28 @@
 # Advanced Natural Language Processing Assignment
 
+## Summary / Menu
+
+This project focuses on the implementation of various sequence labeling models for Part-of-Speech (POS) tagging and Named Entity Recognition (NER). It progressively explores different architectures and techniques, starting from a simple window-based tagger and expanding to models that incorporate external word embeddings, sub-word units, and convolution-based sub-word representations.
+
+### Project Structure:
+1. **Requirements**: Overview of the necessary Python version and libraries for running the models.
+2. **Files**: A detailed explanation of all the files included in the project.
+3. **How to Run**: Instructions for setting up and executing the code.
+4. **Table of Contents**: The main parts of the project, outlining the implementation and evaluation of different tagging models.
+
+### Main Sections:
+1. [Part 1: A Simple Window-Based Tagger](#part-1-a-simple-window-based-tagger)
+   - Basic POS and NER tagging using a neural network with windowed word embeddings.
+2. [Part 2: External Word Embeddings](#part-2-external-word-embeddings)
+   - Adding pre-trained word embeddings to the tagger.
+3. [Part 3: Adding External Word Embeddings to the Tagger](#part-3-adding-external-word-embeddings-to-the-tagger)
+   - Modifying the tagger to incorporate pre-trained embeddings.
+4. [Part 4: Incorporating Sub-word Units in Tagging Tasks](#part-4-incorporating-sub-word-units-in-tagging-tasks)
+   - Enhancing the model by introducing sub-word units (prefixes and suffixes).
+5. [Part 5: Convolution-based Sub-word Units](#part-5-convolution-based-sub-word-units)
+   - Implementing a convolutional neural network (CNN) for character-level sub-word representation.
+
+---
 
 ## Requirements
 
@@ -32,12 +55,6 @@ make sure the pos and ner directory are in the same directory of the code
  python taggerX.py
 
 
-## Table of Contents
-1. [Part 1: A Simple Window-Based Tagger](#part-1-a-simple-window-based-tagger)
-2. [Part 2: External Word Embeddings](#part-2-external-word-embeddings)
-3. [Part 3: Adding External Word Embeddings to the Tagger](#part-3-adding-external-word-embeddings-to-the-tagger)
-4. [Part 4: Incorporating Sub-word Units in Tagging Tasks](#part-4-incorporating-sub-word-units-in-tagging-tasks)
-5. [Part 5: Convolution-based Sub-word Units](#part-5-convolution-based-sub-word-units)
 
 
 ## Part 1: A Simple Window-Based Tagger
